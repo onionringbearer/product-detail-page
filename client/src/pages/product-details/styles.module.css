@@ -1,0 +1,45 @@
+.main {
+  margin: auto;
+  padding-top: 40px;
+  background: #fafafa;
+}
+
+.cartButtons {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  position: relative;
+  left: -9px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background: #fff;
+  padding: 45px 24px 35px 33px;
+}
+
+.addButton {
+  background-color: #ff9f24;
+  color: white;
+  border: none;
+  padding: 19px;
+  min-width: 247px;
+  border-radius: 12px;
+  cursor: pointer;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.addButton:disabled {
+  background-color: #969696;
+  cursor: default;
+}
+
+.shoppingBagButton {
+  border: 0.8px solid #ff9f24;
+  width: 54px;
+  height: 54px;
+}
+
+.navIcon {
+  border: none;
+}

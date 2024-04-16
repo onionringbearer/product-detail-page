@@ -1,4 +1,3 @@
-import React from "react";
 import defaultStyles from "./styles.module.css";
 
 const IconButton = ({ styles = {}, className, onClick, children }) => {

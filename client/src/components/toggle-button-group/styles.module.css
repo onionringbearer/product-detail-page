@@ -1,0 +1,14 @@
+.toggleButton {
+  background: none;
+  border: 1px solid #969696;
+  color: #969696;
+  font-size: 14px;
+  border-radius: 15.5px;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+
+.toggleButtonActive {
+  border-color: #ff9f24;
+  color: #ff9f24;
+}

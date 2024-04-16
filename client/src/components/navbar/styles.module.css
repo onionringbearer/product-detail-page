@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  padding: 0 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navIcon {
+  border: none;
+}
+
+.pageTitle {
+  font-weight: bold;
+  color: #323232;
+  font-size: 18px;
+}
