@@ -1,0 +1,12 @@
+.iconButton {
+  padding: 8px 8px 5px;
+  border-radius: 12px;
+  flex-shrink: 0;
+  background: #fff;
+  cursor: pointer;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}

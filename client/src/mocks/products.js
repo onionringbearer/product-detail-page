@@ -2,7 +2,7 @@ const products = [
   {
     id: 127,
     brand: "Modelo Especial",
-    image: "/products/modelo-especial.jpeg",
+    image: "modelo-especial.jpeg",
     style: "Lager",
     substyle: "Light Lager",
     abv: "4.4%",
@@ -27,7 +27,7 @@ const products = [
   {
     id: 374,
     brand: "Miller Lite",
-    image: "/products/miller-lite.png",
+    image: "miller-lite.png",
     style: "Lager",
     substyle: "Light Lager",
     abv: "4.17%",
@@ -48,7 +48,7 @@ const products = [
   {
     id: 743,
     brand: "Corona Premier",
-    image: "/products/corona.jpg",
+    image: "corona.png",
     style: "Lager",
     substyle: "Mexican Lager",
     abv: "4.0%",
@@ -69,7 +69,7 @@ const products = [
   {
     id: 841,
     brand: "Lagunitas IPA",
-    image: "/products/lagunitas.jpg",
+    image: "lagunitas.png",
     style: "Ale",
     substyle: "Indian Pale Ale",
     abv: "6.2%",

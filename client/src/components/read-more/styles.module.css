@@ -1,0 +1,10 @@
+.text {
+  display: inline;
+  width: 90%;
+}
+
+.toggleReadMore {
+  color: #ff9f24;
+  cursor: pointer;
+  font-weight: bold;
+}

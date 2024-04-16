@@ -1,25 +1,10 @@
-import logo from "./logo.svg";
+import "./global.css";
 import "./app.css";
+import ProductDetails from "./features/product-details/product-details";
+import products from "./mocks/products";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <ProductDetails product={products[0]} />;
 }
 
 export default App;

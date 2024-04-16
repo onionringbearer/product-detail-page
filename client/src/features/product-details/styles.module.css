@@ -1,0 +1,126 @@
+.main {
+  max-width: 500px;
+  margin: auto;
+  padding-top: 40px;
+  background: #fafafa;
+}
+
+.productHeader {
+  display: flex;
+  padding: 0 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productImage {
+  display: block;
+  max-width: 100%;
+  margin: 4px auto 12px;
+  width: 240px;
+  height: 240px;
+}
+
+.pageTitle {
+  font-weight: bold;
+  color: #323232;
+  font-size: 18px;
+}
+
+.productDetails {
+  position: relative;
+  left: -9px;
+  padding: 45px 24px 35px 33px;
+  border-radius: 48px 48px 0px 0px;
+  background: #fff;
+}
+
+.sticker {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sticker h1 {
+  margin: 0;
+}
+
+.productPrice {
+  color: #ff9f24;
+}
+
+.productInfo {
+  font-size: 14px;
+  margin-top: 4px;
+  display: flex;
+  gap: 7px;
+}
+
+.productDescription {
+  margin-top: 29px;
+}
+
+.descriptionTitle {
+  margin-bottom: 8px;
+}
+
+.descriptionText {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.productSkus {
+  margin-top: 22px;
+}
+
+.skusTitle {
+  margin-bottom: 8px;
+}
+
+.skuButtons {
+  margin-right: 2px;
+}
+
+.sizeButton {
+  background: none;
+  border: 1px solid #969696;
+  color: #969696;
+  font-size: 14px;
+  border-radius: 15.5px;
+  padding: 7px 15px;
+  margin: 5px 8px 0 0;
+  cursor: pointer;
+}
+
+.sizeButtonActive {
+  border-color: #ff9f24;
+  color: #ff9f24;
+}
+
+.cartButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.addButton {
+  background-color: #ff9f24;
+  color: white;
+  border: none;
+  padding: 19px;
+  min-width: 247px;
+  border-radius: 12px;
+  cursor: pointer;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.shoppingBagButton {
+  border: 0.8px solid #ff9f24;
+  width: 54px;
+  height: 54px;
+}
+
+.navIcon {
+  border: none;
+}
