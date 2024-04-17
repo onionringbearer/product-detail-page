@@ -8,10 +8,6 @@ const { stockPrice } = require("./mocks/stock-price");
 
 app.use(cors());
 
-// app.get("/api/products", api.getProducts);
-// app.get("/api/product/:id", api.getProductById);
-// app.get("/api/stock-price/:code", api.getStockPriceByCode);
-
 app.get("/api/products", (req, res) => {
   res.send(products);
 });
