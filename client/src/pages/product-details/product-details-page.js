@@ -7,7 +7,7 @@ import { ReactComponent as EllipsisIcon } from "../../assets/icons/ellipsis.svg"
 import { ReactComponent as ShoppingCart } from "../../assets/icons/shopping-bag.svg";
 import ProductDetails from "../../features/product-details/product-details";
 import { useParams, useNavigate } from "react-router-dom";
-import useGetProductById from "../../hooks/useGetProductById";
+import useGetProductById from "../../api/hooks/useGetProductById";
 import { routes } from "../../routes";
 
 const ProductDetailsPage = () => {
@@ -27,6 +27,7 @@ const ProductDetailsPage = () => {
   return (
     <div className={styles.main}>
       <Navbar
+        className={styles.navbar}
         navIcon={<BackIcon />}
         title="Detail"
         onNavIconClick={handleGoBack}

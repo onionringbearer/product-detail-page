@@ -1,0 +1,45 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 16px;
+  width: 155px;
+  background: #fff;
+  box-shadow: -10px 0px 15px rgba(150, 150, 150, 0.1);
+}
+
+.product:nth-child(odd) {
+  border-radius: 12px 32px 12px 12px;
+}
+
+.product:nth-child(even) {
+  border-radius: 32px 12px 12px 12px;
+}
+
+.itemImage {
+  width: 122px;
+  height: 122px;
+  height: auto;
+  margin-top: 5px;
+}
+
+.itemName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #323232;
+  margin: 0;
+}
+
+.itemPrice {
+  font-size: 1.2em;
+  color: #323232;
+  margin-bottom: 8px;
+}
+
+.addButton {
+  background-color: #ff9f24;
+  border: none;
+  border-radius: 8px 0px;
+  align-self: flex-end;
+}

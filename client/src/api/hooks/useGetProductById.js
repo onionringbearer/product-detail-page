@@ -1,4 +1,4 @@
-import { getProductById } from "../api/api";
+import { getProductById } from "./../api";
 import { useState, useEffect } from "react";
 
 const useGetProductById = (productId) => {

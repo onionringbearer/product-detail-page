@@ -4,6 +4,10 @@
   background: #fafafa;
 }
 
+.navbar {
+  padding: 0 24px;
+}
+
 .cartButtons {
   display: flex;
   gap: 17px;

@@ -1,9 +1,9 @@
 import IconButton from "../../components/icon-button/icon-button";
 import styles from "./styles.module.css";
 
-const Navbar = ({ navIcon, title, onNavIconClick, children }) => {
+const Navbar = ({ navIcon, title, className, onNavIconClick, children }) => {
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${className}`}>
       <IconButton className={styles.navIcon} onClick={onNavIconClick}>
         {navIcon}
       </IconButton>

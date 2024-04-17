@@ -1,0 +1,35 @@
+.main {
+  margin: auto;
+  padding: 40px 24px 0;
+  background: #fafafa;
+  height: 100%;
+}
+
+.profilePic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header {
+  margin-top: 24px;
+}
+
+.greeting {
+  margin: 0;
+}
+
+.welcome {
+  color: #323232;
+  margin: 5px 0 0;
+}
+
+.popular {
+  margin-top: 36px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 155px);
+  gap: 13px;
+}
