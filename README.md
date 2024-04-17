@@ -26,3 +26,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 After selecting a product size (sku) in the application, go to the `server` folder and find the `/mocks/stock-price.js` file. 
 Change the stock price that matches the one currently selected in the frontend *and restart the server*. The selected sku in the UI should be refreshed automatically within the next five seconds. 
+
+_This app was created using Node v21.7.1 and npm v10.5.0._
