@@ -2,18 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./global.css";
 import "./index.css";
-import App from "./app";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ProductDetailsPage from "./pages/product-details/product-details-page";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  { path: "/product-details/:productId", element: <ProductDetailsPage /> },
-]);
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

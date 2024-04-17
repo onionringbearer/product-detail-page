@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import styles from "./styles.module.css";
 import Navbar from "../../components/navbar/navbar";
 import IconButton from "../../components/icon-button/icon-button";
@@ -6,10 +6,12 @@ import { ReactComponent as BackIcon } from "../../assets/icons/back.svg";
 import { ReactComponent as EllipsisIcon } from "../../assets/icons/ellipsis.svg";
 import { ReactComponent as ShoppingCart } from "../../assets/icons/shopping-bag.svg";
 import ProductDetails from "../../features/product-details/product-details";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import useGetProductById from "../../hooks/useGetProductById";
+import { routes } from "../../routes";
 
 const ProductDetailsPage = () => {
+  const navigate = useNavigate();
   const [selectedSku, setSelectedSku] = useState(null);
   const { productId } = useParams();
   const product = useGetProductById(productId);
@@ -18,9 +20,17 @@ const ProductDetailsPage = () => {
     setSelectedSku(newSku);
   };
 
+  const handleGoBack = () => {
+    navigate(routes.home);
+  };
+
   return (
     <div className={styles.main}>
-      <Navbar navIcon={<BackIcon />} title="Detail">
+      <Navbar
+        navIcon={<BackIcon />}
+        title="Detail"
+        onNavIconClick={handleGoBack}
+      >
         <IconButton className={styles.navIcon}>
           <EllipsisIcon />
         </IconButton>
