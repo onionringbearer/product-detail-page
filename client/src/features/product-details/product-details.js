@@ -1,9 +1,27 @@
-import { useMemo } from "react";
+import { useMemo, useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import ReadMore from "../../components/read-more/read-more";
 import ToggleButtonGroup from "../../components/toggle-button-group/toggle-button-group";
+import { getStockPriceByCode } from "../../api/api";
 
-const ProductDetails = ({ product, inventory, onSkuChanged, children }) => {
+const ProductDetails = ({ product, onSkuChanged, children }) => {
+  const [inventory, setInventory] = useState(null);
+  const [selectedSku, setSelectedSku] = useState(null);
+
+  useEffect(() => {
+    const fetchInventory = async () => {
+      if (selectedSku) {
+        const data = await getStockPriceByCode(selectedSku.code);
+        setInventory(data);
+      }
+    };
+    const interval = setInterval(fetchInventory, 5000);
+    fetchInventory();
+    return () => {
+      clearInterval(interval);
+    };
+  }, [selectedSku]);
+
   const imageUrl = useMemo(() => {
     return require(`../../assets/images/${product.image}`);
   }, [product.image]);
@@ -13,6 +31,7 @@ const ProductDetails = ({ product, inventory, onSkuChanged, children }) => {
   }, [inventory?.price]);
 
   const handleSizeClick = (newSku) => {
+    setSelectedSku(newSku);
     onSkuChanged?.(newSku);
   };
 

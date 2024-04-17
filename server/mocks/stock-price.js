@@ -5,7 +5,7 @@ const stockPrice = {
   },
   10166: {
     stock: 456,
-    price: 2640,
+    price: 1555,
   },
   10170: {
     stock: 6,
